@@ -37,3 +37,24 @@ ul {
 li {
     margin: 5px 0;
 }
+/* FLEXBOX (REQUIRED) */
+main {
+  display: flex;
+  gap: 20px;
+}
+
+.main-content {
+  flex: 2;
+}
+
+.side-info {
+  flex: 1;
+  background: #eee;
+  padding: 10px;
+}
+
+/* RESPONSIVE IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -37,7 +37,7 @@ li {
     margin: 5px 0;
 }
 /* FLEXBOX (REQUIRED) */
-main {
+.flex-layout {
   display: flex;
   gap: 20px;
 }

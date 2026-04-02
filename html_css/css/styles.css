@@ -58,3 +58,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+.main-content {
+  flex: 2;
+  padding: 15px;
+}
+
+.side-info {
+  flex: 1;
+  padding: 15px;
+}

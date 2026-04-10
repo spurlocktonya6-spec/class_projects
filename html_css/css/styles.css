@@ -8,28 +8,46 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/*MOBILE */
+
+
 /* HEADER */
 header {
-    background: #2c3e50;
+    background: white;
     color: white;
     padding: 15px;
 }
 
 /* NAV */
 nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
     list-style: none;
+    padding: 0;
 }
 
 nav li {
-    display: inline;
+    display: block;
     margin-right: 15px;
 }
 
-nav a {
-    color: white;
+nav li a {
+    display: block;
+  color: white;
     text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    background-color: black;
+    border-radius: 10px;
 }
 
+
+nav li a:hover {
+  background-color: gray;
+}
 /* MAIN */
 main {
     padding: 20px;
@@ -38,6 +56,7 @@ main {
 /* FLEXBOX */
 .flex-layout {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -59,24 +78,12 @@ footer {
     padding: 10px;
 }
 
-/* TABLET */
-@media (max-width: 768px) {
-    .flex-layout {
-        flex-direction: column;
-    }
 
-    nav li {
-        display: block;
-        margin: 5px 0;
-    }
-}
 
-/* MOBILE */
-@media (max-width: 480px) {
+
     header {
         text-align: center;
     }
-}
 .image-row {
   display:flex;
   gap:10px;
@@ -134,25 +141,43 @@ margin-bottom: 15px;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
+    flex-wrap: wrap;
   }
 
   body {
     line-height: 1.6;
   }
-  @media (max-width: 768px) {
+
+
+  @media (min-width: 768px) {
     .flex-layout {
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
   }
-  
+    nav {
+text-align: center;
+    }
+  nav li a {
+    width: 125px;
+  }
+
   img{
-    max-width: 100%;
+    width: 100%;
+    max-width: 250px;
     height: auto;
     border-radius: 8px;
   }
 
   nav ul {
     display:flex;
+    justify-content: center;
     gap: 30px;
     list-style: none;
     padding: 0;
@@ -160,6 +185,15 @@ margin-bottom: 15px;
 
   .image-row img {
     width: 100%;
-    max-width: 400px;
-    height: auto;
+height: auto;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
   }
